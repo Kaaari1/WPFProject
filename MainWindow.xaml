@@ -18,15 +18,15 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Label>Users</Label>
-        <ListBox Grid.Column="0" Grid.Row="1" x:Name="lstNames" />
-        <ListBox Grid.Column="1" Grid.Row="3" x:Name="Phone" />
-        <ListBox Grid.Column="2" Grid.Row="5" x:Name="Services" />
-        <ListBox Grid.Column="3" Grid.Row="7" x:Name="Date" />
+        <ListBox Grid.Column="1" Grid.Row="1" x:Name="lstNames" />
+        <ListBox Grid.Column="2" Grid.Row="1" x:Name="Phone" />
+        <ListBox Grid.Column="3" Grid.Row="1" x:Name="Services" />
+        <ListBox Grid.Column="4" Grid.Row="1" x:Name="Date" />
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
             <Label>Name:</Label><TextBox x:Name="txtName" />
             <Label>Phone:</Label>
             <TextBox x:Name="txtPhone" />
-            <Label>Services:</Label><TextBox x:Name="txtServices" />
+            <Label>Beauty Services:</Label><TextBox x:Name="txtServices" />
             <Label>Date:</Label>
             <TextBox x:Name="txtDate" />
             <Button x:Name="btnAdd" Margin="0,5,0,0" Click="ButtonAddUser_Click">Add Records
