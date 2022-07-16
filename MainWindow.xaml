@@ -18,9 +18,9 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Label>Users</Label>
-        <ListBox Grid.Row="1" x:Name="lstNames" />
-        <ListBox Grid.Row="1" x:Name="Email" />
-        <ListBox Grid.Row="1" x:Name="Phone" />
+        <ListBox Grid.Column="0" Grid.Row="1" x:Name="lstNames" />
+        <ListBox Grid.Column="0" Grid.Row="2" x:Name="Email" />
+        <ListBox Grid.Column="0" Grid.Row="3" x:Name="Phone" />
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
             <Label>Name:</Label><TextBox x:Name="txtName" />
             <Label>Email:</Label><TextBox x:Name="txtEmail" />
