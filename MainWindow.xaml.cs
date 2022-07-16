@@ -27,14 +27,16 @@ namespace WPFProject
 
         private void ButtonAddUser_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text) && !string.IsNullOrWhiteSpace(txtEmail.Text) && !Email.Items.Contains(txtEmail.Text) && !string.IsNullOrWhiteSpace(txtPhone.Text) && !Phone.Items.Contains(txtPhone.Text))
+            if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text) && !string.IsNullOrWhiteSpace(txtServices.Text) && !Services.Items.Contains(txtServices.Text) && !string.IsNullOrWhiteSpace(txtPhone.Text) && !Phone.Items.Contains(txtPhone.Text))
             {
                 lstNames.Items.Add(txtName.Text);
-                Email.Items.Add(txtEmail.Text);
                 Phone.Items.Add(txtPhone.Text);
+                Services.Items.Add(txtServices.Text);
+                Date.Items.Add(txtDate.Text);
                 txtName.Clear();
-                txtEmail.Clear();
                 txtPhone.Clear();
+                txtServices.Clear();
+                txtDate.Clear();
             }
         }
 
