@@ -27,7 +27,7 @@ namespace WPFProject
 
         private void ButtonAddUser_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text) && !string.IsNullOrWhiteSpace(txtEmail.Text) && !lstNames.Items.Contains(txtEmail.Text) && !string.IsNullOrWhiteSpace(txtPhone.Text) && !lstNames.Items.Contains(txtPhone.Text))
+            if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text) && !string.IsNullOrWhiteSpace(txtEmail.Text) && !Email.Items.Contains(txtEmail.Text) && !string.IsNullOrWhiteSpace(txtPhone.Text) && !Phone.Items.Contains(txtPhone.Text))
             {
                 lstNames.Items.Add(txtName.Text);
                 Email.Items.Add(txtEmail.Text);
@@ -40,7 +40,7 @@ namespace WPFProject
 
         private void ButtonRecords_Click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow wnd = new MainWindow();
         }
     }
 }
